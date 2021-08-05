@@ -1,4 +1,4 @@
-import { releaseMedia } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.0/javascript/extra/media.js";
+import { releaseMedia } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.1.0/javascript/extra/media.js";
 const flexTape = document.querySelector("#flex-tape");
 const chat = document.querySelector(".chat");
 const chatBox = document.querySelector("#chatbox");
@@ -9,7 +9,7 @@ const text = () => {
     releaseMedia();
 };
 const video = () => {
-    flexTape.style.display = "flex";
+    flexTape.style.display = "";
     chat.appendChild(chatBox);
 };
 export { text, video };

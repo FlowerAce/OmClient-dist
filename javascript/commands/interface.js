@@ -1,5 +1,5 @@
-import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.0/javascript/storage/settings.js";
-import * as chatNode from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.0/javascript/ui/chat/manager.js";
+import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.1.0/javascript/storage/settings.js";
+import * as chatNode from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.1.0/javascript/ui/chat/manager.js";
 const cmd = {
     history: [],
     position: -1,
@@ -29,6 +29,9 @@ const changeVal = (newPosition) => {
     chatNode.typebox.value = cmd.history[newPosition];
 };
 const handleHistory = (command) => {
+    if (command[1] == " ") {
+        return;
+    }
     cmd.position = -1;
     addToHistory(command);
 };

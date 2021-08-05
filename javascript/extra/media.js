@@ -1,4 +1,4 @@
-import { errorHandler } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.0/javascript/ui/errorHandler.js";
+import { errorHandler } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.1.0/javascript/ui/errorHandler.js";
 const constrains = {
     video: true,
     audio: {
@@ -25,6 +25,15 @@ const releaseMedia = async () => {
     const tracks = mediaData.getTracks();
     tracks.forEach((track) => track.stop());
 };
-export { media, setMedia, releaseMedia };
+const muteAny = (track) => (track.enabled = !track.enabled);
+const muteMic = async () => {
+    const mediaObj = await media;
+    mediaObj.getAudioTracks().forEach(muteAny);
+};
+const muteCam = async () => {
+    const mediaObj = await media;
+    mediaObj.getVideoTracks().forEach(muteAny);
+};
+export { media, setMedia, releaseMedia, muteCam, muteMic };
 
 //# sourceMappingURL=media.js.map

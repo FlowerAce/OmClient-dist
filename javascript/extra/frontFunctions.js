@@ -1,8 +1,9 @@
-import { backend } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.0/javascript/index.js";
-import { addMessage } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.0/javascript/ui/chat/add.js";
+import { backend, session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.1.0/javascript/index.js";
+import { addMessage } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.1.0/javascript/ui/chat/add.js";
 const sendMessage = (msg) => {
     backend.sendIdentifiedPOST("send", { msg });
     addMessage(msg, "you");
+    session.typing = false;
 };
 const getLikeString = (likes) => {
     if (likes.length < 0) {
