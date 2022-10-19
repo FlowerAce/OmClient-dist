@@ -1,7 +1,10 @@
-import { getRandomItem, setFirst } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.1.0/javascript/modules/array.js";
-import { encodeObject } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.1.0/javascript/modules/functions.js";
+import { getRandomItem, setFirst } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.0/javascript/modules/array.js";
+import { encodeObject } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.0/javascript/modules/functions.js";
 class Backend {
     constructor({ eventHandler, connectionArgs, errorHandler }) {
+        this.host = window.location.host || window.parent.location.host;
+        this.domain = this.host.replace("www.", "");
+        this.protocol = window.location.protocol;
         this.sendIdentifiedPOST = (path, data) => {
             const sendData = data || {};
             const plainObject = { id: this.id, ...sendData };
@@ -13,8 +16,12 @@ class Backend {
         this.connectionArgs = connectionArgs;
         this.errorHandler = errorHandler;
     }
+    craftURL(server, path) {
+        const { protocol, domain } = this;
+        return `${protocol}//${server}.${domain}/${path}`;
+    }
     async sendPOST(path, data) {
-        const response = fetch(`https://${this.server}.omegle.com/${path}`, {
+        const response = fetch(this.craftURL(this.server, path), {
             method: "POST",
             body: data,
             headers: {
@@ -27,7 +34,7 @@ class Backend {
     }
     async connect() {
         const args = encodeObject(this.connectionArgs());
-        const url = `https://${this.server}.omegle.com/start?${args}`;
+        const url = this.craftURL(this.server, `start?${args}`);
         const responsePromise = fetch(url, {
             method: "POST",
             referrerPolicy: "no-referrer",
@@ -62,7 +69,7 @@ class Backend {
         this.subscribe();
     }
     async serverFinder() {
-        const rawDataPromise = fetch("https://omegle.com/status");
+        const rawDataPromise = fetch(this.craftURL("chatserv", "status"));
         rawDataPromise.catch(this.errorHandler);
         const rawData = await rawDataPromise;
         const info = await rawData.json();

@@ -22,6 +22,12 @@ const encodeObject = (data) => {
                 append(key, value);
                 break;
             case "object":
+                if (Array.isArray(value)) {
+                    value.forEach((element) => {
+                        append(key, JSON.stringify(element));
+                    });
+                    continue;
+                }
                 append(key, JSON.stringify(value));
                 break;
             case "boolean":

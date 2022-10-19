@@ -8,6 +8,8 @@ class Session {
             call: false,
             peer: false,
             candidates: [],
+            icelocal: [],
+            wait: 0,
         };
     }
 }
