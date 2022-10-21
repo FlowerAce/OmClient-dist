@@ -1,8 +1,8 @@
-import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.0/javascript/storage/settings.js";
+import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.1/javascript/storage/settings.js";
 const connectionArgs = () => {
     const { video, likes, lang } = settings;
     const arg = {
-        caps: "t",
+        caps: "t2",
         webrtc: true,
         firstevents: false,
         lang: lang,

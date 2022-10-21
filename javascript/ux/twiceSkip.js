@@ -1,4 +1,4 @@
-import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.0/javascript/storage/settings.js";
+import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.1/javascript/storage/settings.js";
 import { skip } from "./disconnect.js";
 const idHistory = [];
 const checkId = (id) => idHistory.some((functionId) => functionId == id);

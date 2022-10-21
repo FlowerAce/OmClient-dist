@@ -1,6 +1,6 @@
-import { backend, session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.0/javascript/index.js";
-import { clearArray } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.0/javascript/modules/array.js";
-import { othervideo } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.0/javascript/ui/nodes/video.js";
+import { backend, session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.1/javascript/index.js";
+import { clearArray } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.1/javascript/modules/array.js";
+import { othervideo } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.1/javascript/ui/nodes/video.js";
 const WEB = {
     config: {
         iceServers: [

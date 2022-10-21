@@ -1,5 +1,5 @@
-import { session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.0/javascript/index.js";
-import { clearAllElements } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.0/javascript/modules/dom.js";
+import { session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.1/javascript/index.js";
+import { clearAllElements } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.1/javascript/modules/dom.js";
 import { clearAdd } from "./chat/add.js";
 import { setDC } from "./nodes/disconnect.js";
 const errorHandler = (error) => {
