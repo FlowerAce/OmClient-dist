@@ -1,6 +1,6 @@
-import { commandHandler } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/commands/handler.js";
-import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/storage/settings.js";
-import { typebox } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/ui/chat/manager.js";
+import { commandHandler } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/commands/handler.js";
+import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/storage/settings.js";
+import { typebox } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/ui/chat/manager.js";
 import { events } from "./list.js";
 const recordKeyPromise = (resolve) => {
     const handleEvent = (keyEvent) => {

@@ -1,5 +1,5 @@
-import { newChat, session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/index.js";
-import { disconnect } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/ux/disconnect.js";
+import { newChat, session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/index.js";
+import { disconnect } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/ux/disconnect.js";
 const dctxt = document.querySelector("#dscnttxt");
 const dcbtn = document.querySelector("#dscntbtn");
 const setDC = (className) => {

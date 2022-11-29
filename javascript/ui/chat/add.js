@@ -1,4 +1,4 @@
-import { createChildBefore } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/modules/dom.js";
+import { createChildBefore } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/modules/dom.js";
 import { clear, scroll } from "./manager.js";
 const addChild = (domObject) => {
     createChildBefore("#logbox", ".typing", domObject);

@@ -1,4 +1,4 @@
-import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/storage/settings.js";
+import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/storage/settings.js";
 const connectionArgs = () => {
     const { video, likes, lang } = settings;
     const arg = {

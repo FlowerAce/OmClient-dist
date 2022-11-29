@@ -1,9 +1,9 @@
-import { commandHandler } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/commands/handler.js";
-import { sendMessage } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/extra/frontFunctions.js";
-import { session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/index.js";
-import { clearAllElements, clearChilds } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/modules/dom.js";
-import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/storage/settings.js";
-import { setDC } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/ui/nodes/disconnect.js";
+import { commandHandler } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/commands/handler.js";
+import { sendMessage } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/extra/frontFunctions.js";
+import { session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/index.js";
+import { clearAllElements, clearChilds } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/modules/dom.js";
+import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/storage/settings.js";
+import { setDC } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/ui/nodes/disconnect.js";
 import { addChild } from "./add.js";
 const logbox = document.querySelector("#logbox");
 const logwrapper = document.querySelector("#logwrapper");

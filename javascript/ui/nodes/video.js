@@ -1,5 +1,5 @@
-import { session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/index.js";
-import { clearAllElements, createChild } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/modules/dom.js";
+import { session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/index.js";
+import { clearAllElements, createChild } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/modules/dom.js";
 const othervideo = document.querySelector("#othervideo");
 const selfvideo = document.querySelector("#selfvideo");
 const setVolume = (volume) => {
