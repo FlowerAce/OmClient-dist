@@ -1,8 +1,8 @@
-import { getRandomItem, setFirst } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/modules/array.js";
-import { encodeObject } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/modules/functions.js";
+import { getRandomItem, setFirst } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/modules/array.js";
+import { encodeObject } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/modules/functions.js";
 class Backend {
     constructor({ eventHandler, connectionArgs, errorHandler }) {
-        this.host = window.location.host || window.parent.location.host;
+        this.host = window?.parent.location.host || window.location.host;
         this.domain = this.host.replace("www.", "");
         this.protocol = window.location.protocol;
         this.sendIdentifiedPOST = (path, data) => {

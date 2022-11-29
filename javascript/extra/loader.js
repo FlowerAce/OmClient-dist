@@ -1,13 +1,13 @@
-import * as cmd from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/commands/interface.js";
-import { backend } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/index.js";
-import { bindingHandler } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/keyboard/bindings.js";
-import { keyboardHandler } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/keyboard/handler.js";
-import { settingManager } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/storage/settings.js";
-import * as chatNode from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/ui/chat/manager.js";
-import * as disconnectNode from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/ui/nodes/disconnect.js";
-import * as videoNode from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/ui/nodes/video.js";
-import * as twiceSkip from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/ux/twiceSkip.js";
-import { typingHanlder } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/ux/typing.js";
+import * as cmd from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/commands/interface.js";
+import { backend } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/index.js";
+import { bindingHandler } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/keyboard/bindings.js";
+import { keyboardHandler } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/keyboard/handler.js";
+import { settingManager } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/storage/settings.js";
+import * as chatNode from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/ui/chat/manager.js";
+import * as disconnectNode from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/ui/nodes/disconnect.js";
+import * as videoNode from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/ui/nodes/video.js";
+import * as twiceSkip from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/ux/twiceSkip.js";
+import { typingHanlder } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/ux/typing.js";
 const loadAll = () => {
     addEventListeners();
     loadFromStroage();

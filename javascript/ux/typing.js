@@ -1,6 +1,6 @@
-import { backend, session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/index.js";
-import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/storage/settings.js";
-import { typebox } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/ui/chat/manager.js";
+import { backend, session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/index.js";
+import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/storage/settings.js";
+import { typebox } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/ui/chat/manager.js";
 let timeout = -1;
 const typing = () => {
     if (session.typing) {

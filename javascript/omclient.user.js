@@ -11,7 +11,7 @@
 (async () => {
 	document.documentElement.innerHTML = "<head><title>Omegle</title></head><body></body>";
 	window.stop();
-	const doc = await fetch("https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/index.html").then((response) => response.text());
+	const doc = await fetch("https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/index.html").then((response) => response.text());
 	const item = document.createElement("iframe");
 	item.srcdoc = doc;
 	item.style = "position:fixed; inset:0; width:100%; height:100%; border:none;";

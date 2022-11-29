@@ -1,9 +1,9 @@
-import { commands } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/commands/list.js";
-import { sendMessage } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/extra/frontFunctions.js";
-import { newChat, session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/index.js";
-import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/storage/settings.js";
-import { addChild } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/ui/chat/add.js";
-import { text as enableText, video as enableVideo } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/ui/modes.js";
+import { commands } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/commands/list.js";
+import { sendMessage } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/extra/frontFunctions.js";
+import { newChat, session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/index.js";
+import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/storage/settings.js";
+import { addChild } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/ui/chat/add.js";
+import { text as enableText, video as enableVideo } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/ui/modes.js";
 const help = () => {
     const instructions = commands.reduce((val, element) => `${val}<b>${element.name}</b>:<br>${element.description}<br>`, "");
     addChild({

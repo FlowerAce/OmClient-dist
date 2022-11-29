@@ -1,5 +1,5 @@
-import { backend, session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/index.js";
-import { addMessage } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.2/javascript/ui/chat/add.js";
+import { backend, session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/index.js";
+import { addMessage } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.3/javascript/ui/chat/add.js";
 const sendMessage = (msg) => {
     backend.sendIdentifiedPOST("send", { msg });
     addMessage(msg, "you");
