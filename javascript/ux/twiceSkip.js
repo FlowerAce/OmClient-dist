@@ -1,7 +1,8 @@
-import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/storage/settings.js";
+import { settings } from "../storage/settings.js";
 import { skip } from "./disconnect.js";
 const idHistory = [];
-const checkId = (id) => idHistory.some((functionId) => functionId == id);
+const hashSet = new Set();
+let browserHash = "";
 const saveLocal = () => localStorage.setItem("idHistory", JSON.stringify(idHistory));
 const loadLocal = () => {
     const parsed = JSON.parse(localStorage.getItem("idHistory"));
@@ -10,12 +11,37 @@ const loadLocal = () => {
     }
     idHistory.push(...parsed);
 };
+const getPairs = (id) => {
+    const hashes = id.split(",");
+    const firstPair = hashes[0] + hashes[1];
+    const secondPair = hashes[2] + hashes[3];
+    return [firstPair, secondPair];
+};
+const getRemoteHash = (id) => {
+    const pairs = getPairs(id);
+    return pairs[0] === browserHash ? pairs[1] : pairs[0];
+};
+const setBrowserHash = (id) => {
+    const pairs = getPairs(id);
+    for (const pair of pairs) {
+        if (hashSet.has(pair)) {
+            browserHash = pair;
+            return;
+        }
+        hashSet.add(pair);
+    }
+};
 const twiceSkipping = (id) => {
-    if (checkId(id) && settings.twiceskip) {
+    if (!browserHash) {
+        setBrowserHash(id);
+        return;
+    }
+    const remoteHash = getRemoteHash(id);
+    if (idHistory.includes(remoteHash) && settings.twiceskip) {
         skip();
         return true;
     }
-    idHistory.push(id);
+    idHistory.push(remoteHash);
     saveLocal();
 };
 export { twiceSkipping, loadLocal };

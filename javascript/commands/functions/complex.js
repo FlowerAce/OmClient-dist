@@ -1,9 +1,9 @@
-import { commands } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/commands/list.js";
-import { sendMessage } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/extra/frontFunctions.js";
-import { newChat, session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/index.js";
-import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/storage/settings.js";
-import { addChild } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/ui/chat/add.js";
-import { text as enableText, video as enableVideo } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/ui/modes.js";
+import { commands } from "../list.js";
+import { sendMessage } from "../../extra/frontFunctions.js";
+import { newChat, session } from "../../index.js";
+import { settings } from "../../storage/settings.js";
+import { addChild } from "../../ui/chat/add.js";
+import { text as enableText, video as enableVideo } from "../../ui/modes.js";
 const help = () => {
     const instructions = commands.reduce((val, element) => `${val}<b>${element.name}</b>:<br>${element.description}<br>`, "");
     addChild({

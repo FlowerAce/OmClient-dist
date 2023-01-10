@@ -1,12 +1,12 @@
-import { backend, newChat, session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/index.js";
-import { clearAllElements } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/modules/dom.js";
-import { allowUnload } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/modules/functions.js";
-import { rateLimit, rateLimited } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/modules/ratelimit.js";
-import { deletePC } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/network/webrtc.js";
-import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/storage/settings.js";
-import { addStatus } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/ui/chat/add.js";
-import { setDC } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/ui/nodes/disconnect.js";
-import { othervideo } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/ui/nodes/video.js";
+import { backend, newChat, session } from "../index.js";
+import { clearAllElements } from "../modules/dom.js";
+import { allowUnload } from "../modules/functions.js";
+import { rateLimit, rateLimited } from "../modules/ratelimit.js";
+import { deletePC } from "../network/webrtc.js";
+import { settings } from "../storage/settings.js";
+import { addStatus } from "../ui/chat/add.js";
+import { setDC } from "../ui/nodes/disconnect.js";
+import { othervideo } from "../ui/nodes/video.js";
 const disconnect = (autoskip = true) => {
     if (!session.started) {
         return;

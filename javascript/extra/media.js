@@ -1,4 +1,4 @@
-import { errorHandler } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/ui/errorHandler.js";
+import { errorHandler } from "../ui/errorHandler.js";
 const constrains = {
     video: true,
     audio: {

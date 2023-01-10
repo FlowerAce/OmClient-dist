@@ -1,10 +1,10 @@
-import * as cmd from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/commands/interface.js";
-import { session } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/index.js";
-import { settings } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/storage/settings.js";
-import * as chatNode from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/ui/chat/manager.js";
-import { handleInput } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/ui/chat/manager.js";
-import { dchandler } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/ui/nodes/disconnect.js";
-import { disconnect, skip } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/ux/disconnect.js";
+import * as cmd from "../commands/interface.js";
+import { session } from "../index.js";
+import { settings } from "../storage/settings.js";
+import * as chatNode from "../ui/chat/manager.js";
+import { handleInput } from "../ui/chat/manager.js";
+import { dchandler } from "../ui/nodes/disconnect.js";
+import { disconnect, skip } from "../ux/disconnect.js";
 const send = function () {
     if (this.shiftKey) {
         return;
@@ -31,7 +31,7 @@ const slash = () => {
 };
 const up = () => cmd.next();
 const down = () => cmd.previous();
-export { skip } from "https://cdn.jsdelivr.net/gh/FlowerAce/OmClient-dist@1.2.4/javascript/ux/disconnect.js";
+export { skip } from "../ux/disconnect.js";
 export { send, escape, slash, up, down };
 
 //# sourceMappingURL=functions.js.map
